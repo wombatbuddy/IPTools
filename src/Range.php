@@ -237,7 +237,7 @@ class Range implements \Iterator, \Countable
 	#[ReturnTypeWillChange]
 	public function count()
 	{
-		return (integer)bcadd(bcsub($this->lastIP->toLong(), $this->firstIP->toLong()), 1);
+		return (int)bcadd(bcsub($this->lastIP->toLong(), $this->firstIP->toLong()), 1);
 	}
 
 }
