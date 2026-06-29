@@ -18,15 +18,12 @@ Thumbs.db
 # composer vendor dir
 /vendor
 
-# phpunit itself is not needed
-phpunit.phar
-
 # local phpunit config
 phpunit.xml
+
 .phpunit.result.cache
 
-# coverage report
-/coverage
+# phpunit cache dir (PHPUnit 10)
+.phpunit.cache
 
-composer.phar
 composer.lock
