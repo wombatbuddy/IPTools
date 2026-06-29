@@ -202,6 +202,29 @@ foreach($networks as $network) {
 ```php
 echo count(Range::parse('192.168.1.1-192.168.1.254')) // 254
 ```
+## Development
+
+The library uses Docker for running tests locally.
+
+**Build the Docker image:**
+```bash
+make build
+```
+
+**Install dependencies:**
+```bash
+make install
+```
+
+**Run tests:**
+```bash
+make test
+```
+
+You can also run PHPUnit with additional options, for example to display deprecation details:
+```bash
+docker compose run --rm php vendor/bin/phpunit --display-deprecations --display-phpunit-deprecations
+```
 
 # License
 The library is released under the [MIT](https://opensource.org/licenses/MIT).
